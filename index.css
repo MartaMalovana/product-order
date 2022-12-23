@@ -26,7 +26,12 @@ input {
 .product p {
     margin: 0 auto;
 }
-s
+
+button {
+    width: fit-content;
+    margin: 20px auto;
+}
+  
 .description {
     margin: 0;
 }
@@ -74,7 +79,6 @@ fieldset {
 
 .submitOrder {
     display: block;
-    margin: 10px auto;
 }
 
 .orderInfo {
