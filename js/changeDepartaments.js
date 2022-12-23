@@ -1,5 +1,5 @@
-export default function changeDepartaments (newDepartaments) {
-    
+export default function changeDepartaments(newDepartaments) {
+
     const selectDepartment = document.querySelector('.selectDepartament');
 
     newDepartaments.map(el => {
@@ -7,5 +7,5 @@ export default function changeDepartaments (newDepartaments) {
         item.setAttribute('value', `${el.Number}, ${el.Description}`);
         item.textContent = `Відділення номер ${el.Number}, ${el.Description}`;
         selectDepartment.appendChild(item);
-     });   
+    });
 };

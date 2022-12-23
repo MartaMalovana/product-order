@@ -1,14 +1,14 @@
-export default function showOrderDOM (data) {
-    let info = {};
-    info.lastName = data[name='lastName'].value;
-    info.firstName = data[name='firstName'].value;
-    info.fatherName = data[name='fatherName'].value;
-    info.city = document.querySelector('[name="selectedCity"]').options[document.querySelector('[name="selectedCity"]').selectedIndex].textContent;
-    info.departament = data[name='selectedDepartament'].value;
-    info.productAmount = data[name='productAmount'].value;
-    info.comment = data[name='comment'].value;
+export default function showOrderDOM(data) {
+   let info = {};
+   info.lastName = data[name = 'lastName'].value;
+   info.firstName = data[name = 'firstName'].value;
+   info.fatherName = data[name = 'fatherName'].value;
+   info.city = document.querySelector('[name="selectedCity"]').options[document.querySelector('[name="selectedCity"]').selectedIndex].textContent;
+   info.departament = data[name = 'selectedDepartament'].value;
+   info.productAmount = data[name = 'productAmount'].value;
+   info.comment = data[name = 'comment'].value;
 
-    const infoSection = `<div class="info">
+   const infoSection = `<div class="info">
        <h3>Дякуємо за замовлення!</h3>
        <div class="info-part">
           <p class="info-title">ПІБ:</p>
@@ -30,8 +30,8 @@ export default function showOrderDOM (data) {
        </div> 
     </div>`;
 
-    const orderInfo = document.querySelector('.orderInfo');
-    orderInfo.innerHTML = infoSection;
+   const orderInfo = document.querySelector('.orderInfo');
+   orderInfo.innerHTML = infoSection;
 
-    return infoSection;
+   return infoSection;
 }
