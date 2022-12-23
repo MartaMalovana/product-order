@@ -19,12 +19,13 @@ input {
 .product {
     display: flex;
     flex-direction: row;
-    width: 500px;
+    max-width: 500px;
     border: 2px solid rgb(32, 219, 26);
 }
 
 .product p {
     margin: 0 auto;
+    text-align: center;
 }
 
 button {
@@ -141,4 +142,12 @@ option {
 
 .info p {
     overflow-wrap: break-word;
+}
+
+.selectedCity {
+    min-width: 100%;
+}
+
+legend {
+    width: max-content;
 }
